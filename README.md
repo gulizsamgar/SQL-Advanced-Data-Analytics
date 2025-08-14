@@ -352,7 +352,7 @@ ORDER BY total_products DESC;
 **Müşterileri harcama davranışlarına göre üç segmente ayırın:</br>**
 - VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.</br>
 - Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.</br>
-- New: Yaşam süreleri 12 aydan az olan müşteriler.</br>**
+- New: Yaşam süreleri 12 aydan az olan müşteriler.</br>
 **Ve her gruba göre toplam müşteri sayısını bulun.**
 
 ```sql

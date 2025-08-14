@@ -1,19 +1,19 @@
 /*
 ===============================================================================
-Cumulative Analysis
+Cumulative Analysis (Kümülatif Analiz)
 ===============================================================================
-Purpose:
-    - To calculate running totals or moving averages for key metrics.
-    - To track performance over time cumulatively.
-    - Useful for growth analysis or identifying long-term trends.
+Amaç:
+- Temel metrikler için toplamları veya hareketli ortalamaları hesaplamak.
+- Performansı zaman içinde kümülatif olarak izlemek.
+- Büyüme analizi veya uzun vadeli eğilimleri belirlemek için kullanışlıdır.
 
-SQL Functions Used:
+Kullanılan SQL Fonksiyonları:
     - Window Functions: SUM() OVER(), AVG() OVER()
 ===============================================================================
 */
 
--- Calculate the total sales per month
--- and the running total of sales over time 
+-- Aylık toplam satışları 
+-- ve zaman içindeki toplam satışları hesaplayın
 SELECT
 	order_date,
 	total_sales,
@@ -29,8 +29,8 @@ FROM
 ) t
 	
 
--- Calculate the total sales per year 
--- and the running total of sales over time, moving average price  of sales over time
+-- Yıllık toplam satışları 
+-- ve zaman içindeki satışların toplamını, hareketli ortalama satış fiyatını hesaplayın
 SELECT
 	order_date,
 	total_sales,
@@ -46,6 +46,7 @@ FROM
     WHERE order_date IS NOT NULL
     GROUP BY DATETRUNC(year, order_date)
 ) t
+
 
 
 

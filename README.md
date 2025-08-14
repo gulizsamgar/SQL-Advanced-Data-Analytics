@@ -87,7 +87,7 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 
 ## Analiz Bölümleri
 
-### 1. Zaman İçinde Değişim Analizi (Change Over Time Analysis)
+## 1. Zaman İçinde Değişim Analizi (Change Over Time Analysis)
 
 **Amaç:**
 - Zaman içinde temel metriklerdeki eğilimleri, büyümeyi ve değişiklikleri izlemek.
@@ -142,7 +142,7 @@ GROUP BY FORMAT(order_date, 'yyyy-MMM')
 ORDER BY FORMAT(order_date, 'yyyy-MMM');
 ```
 
-### 2. Kümülatif Analiz (Cumulative Analysis)
+## 2. Kümülatif Analiz (Cumulative Analysis)
 
 **Amaç:**
 - Temel metrikler için toplamları veya hareketli ortalamaları hesaplamak.
@@ -194,7 +194,7 @@ FROM
 ) t
 ```
 
-### 3. Performans Analizi (Year-over-Year, Month-over-Month)
+## 3. Performans Analizi (Year-over-Year, Month-over-Month)
 
 **Amaç:**
 - Ürünlerin, müşterilerin veya bölgelerin zaman içindeki performansını ölçmek.
@@ -245,7 +245,7 @@ FROM yearly_product_sales
 ORDER BY product_name, order_year;
 ```
 
-### 4. Parçadan Bütüne Analiz (Part-to-Whole Analysis)
+## 4. Parçadan Bütüne Analiz (Part-to-Whole Analysis)
 
 **Amaç:**
 - Boyutlar veya zaman dilimleri arasında performansı veya metrikleri karşılaştırmak.
@@ -277,7 +277,7 @@ FROM category_sales
 ORDER BY total_sales DESC;
 ```
 
-### 5. Veri Segmentasyon Analizi (Data Segmentation Analysis)
+## 5. Veri Segmentasyon Analizi (Data Segmentation Analysis)
 
 **Amaç:**
 - Hedeflenen içgörüler için verileri anlamlı kategorilere ayırmak.
@@ -355,7 +355,7 @@ ORDER BY total_customers DESC;
 <img width="1975" height="1598" alt="image" src="https://github.com/user-attachments/assets/5577518e-1a06-47a2-b123-e1d5875be7d4" />
 </p>
 
-### 6. Müşteri Raporu (Customer Report)
+## 6. Müşteri Raporu (Customer Report)
 
 **Amaç:**
 - Bu rapor, temel müşteri metriklerini ve davranışlarını bir araya getirir.
@@ -452,7 +452,7 @@ FROM customer_aggregation
 <p></p>
 
 
-### 7. Ürün Raporu (Product Report)
+## 7. Ürün Raporu (Product Report)
 
 **Amaç:**
 - Bu rapor, temel ürün metriklerini ve davranışlarını bir araya getirir.

@@ -32,7 +32,7 @@ Projede üç veri seti kullanıldı:
 ## 📋 İçerik
 
 **Analiz Bölümleri**
-1. Zaman İçinde Değişim Analizi (Change Over Time Analysis)
+1.Zaman İçinde Değişim Analizi (Change Over Time Analysis)
 2. Kümülatif Analiz (Cumulative Analysis)
 3. Performans Analizi (Year-over-Year, Month-over-Month)
 4. Parçadan Bütüne Analiz (Part-to-Whole Analysis)

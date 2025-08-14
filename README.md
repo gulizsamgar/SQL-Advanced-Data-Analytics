@@ -74,12 +74,53 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 
 ---
 
-## 📌 Aşağıda belirtilen analiz için Üst Yönetim için Temel Bulgular ve Öneriler
+## 📌 Aşağıda belirtilen analiz hakkında Üst Yönetim için Temel Bulgular ve Öneriler
 
+### 1. Satış Performansı ve Trendler
 
+**Temel Bulgular:**
+- 2010–2013 arasında güçlü bir büyüme eğilimi varken 2014’te hem satış hem müşteri sayısında keskin düşüş yaşanmış.
+- Kümülatif analizde büyüme ivmesi 2014’te belirgin şekilde zayıflamış.
+- Ortalama satış fiyatı yıllar içinde düşüş göstermiş (2011’de 3.146 → 2014’te 1.668).
 
+**✅Öneriler:**
+- 2014’teki düşüşün nedenleri (rekabet, pazar koşulları, ürün stratejisi) detaylı analiz edilmeli.
+- Fiyatlandırma politikası gözden geçirilmeli; gerekirse değer odaklı fiyat artışı uygulanmalı.
+- Büyümenin yüksek olduğu yıllardaki kampanya ve satış stratejileri yeniden devreye alınmalı.
 
+### 2. Ürün Performansı ve Portföy Yönetimi
 
+**Temel Bulgular:**
+- Satışların %96’sı bisiklet kategorisinden geliyor; aksesuar ve giyim kategorilerinin payı oldukça düşük.
+- Bazı ürünler yıllar içinde ortalamanın üzerinde performans gösterirken (Above Avg), bazıları sürekli ortalamanın altında kalmış (Below Avg).
+- “High-Performer” ürünler toplam gelirde kritik paya sahip; “Low-Performer” ürünlerin satış katkısı çok düşük.
+
+**✅Öneriler:**
+- Tek kategoriye (bisiklet) bağımlılığı azaltmak için aksesuar ve giyim satışlarını artırıcı pazarlama çalışmaları yapılmalı.
+- Sürekli düşük performans gösteren ürünlerde stok azaltma, fiyat indirimi veya ürün portföyünden çıkarma değerlendirilmelidir.
+- Yüksek performanslı ürünlerin stok ve tedarik sürekliliği güvence altına alınmalı.
+
+### 3. Müşteri Segmentasyonu ve Sadakat
+
+**Temel Bulgular:**
+- Müşterilerin %81’i “New” segmentinde; VIP müşteri oranı sadece %9 civarında.
+- VIP müşteriler yüksek harcama kapasitesine sahip ve uzun vadeli gelir potansiyeli taşıyor.
+- 30–50 yaş grubu müşteri kitlesi baskın durumda.
+
+**✅Öneriler:**
+- Yeni müşterilerin “Regular” veya “VIP” segmente geçişini hızlandırmak için sadakat programları uygulanmalı.
+- VIP müşterilere özel kampanyalar, avantajlı fiyatlar ve kişiselleştirilmiş hizmetler sunulmalı.
+- 30–50 yaş grubuna yönelik hedefli pazarlama stratejileri geliştirilmelidir.
+
+### 4. Fiyatlandırma ve Karlılık
+
+**Temel Bulgular:**
+- Ortalama satış fiyatındaki düşüş kâr marjını olumsuz etkileyebilir.
+- Bazı ürünlerde fiyat dalgalanmaları ve düşük fiyatla satış söz konusu.
+
+**✅Öneriler:**
+- Karlılık analizi yapılarak düşük fiyatlı ürünlerde fiyat optimizasyonu yapılmalı.
+- Yüksek talep gören ürünlerde kâr marjını artıracak fiyat güncellemeleri uygulanmalı.
 
 ---
 

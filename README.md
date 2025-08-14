@@ -94,6 +94,10 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 - Zaman serisi analizi ve mevsimselliğin belirlenmesi için.
 - Belirli dönemlerdeki büyümeyi veya düşüşü ölçmek.
 
+<p></p>
+  <img width="1540" height="673" alt="image" src="https://github.com/user-attachments/assets/81477464-791c-499b-ac39-3685a4bbfa77" />
+<p></p>
+
 **Zaman içinde satış performansını analiz edin**
 **- Hızlı Tarih Fonksiyonları**
 
@@ -145,6 +149,10 @@ ORDER BY FORMAT(order_date, 'yyyy-MMM');
 - Performansı zaman içinde kümülatif olarak izlemek.
 - Büyüme analizi veya uzun vadeli eğilimleri belirlemek için kullanışlıdır.
 
+<p></p>
+<img width="1452" height="668" alt="image" src="https://github.com/user-attachments/assets/9090d077-882c-4494-8c80-151cc41f8459" />
+<p></p>
+
 **Aylık toplam satışları 
 ve zaman içindeki toplam satışları hesaplayın**
 
@@ -193,6 +201,10 @@ FROM
 - Yüksek performans gösteren kuruluşları kıyaslamak ve belirlemek.
 - Yıllık trendleri ve büyümeyi izlemek.
 
+<p></p>
+<img width="1306" height="690" alt="image" src="https://github.com/user-attachments/assets/ed74b158-8389-4bc5-a375-2114b218d7ed" />
+<p></p>
+
 ** Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla 
 hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin **
 
@@ -240,6 +252,10 @@ ORDER BY product_name, order_year;
 - Kategoriler arasındaki farklılıkları değerlendirmek.
 - A/B testi veya bölgesel karşılaştırmalar için kullanışlıdır.
 
+<p></p>
+<img width="1370" height="659" alt="image" src="https://github.com/user-attachments/assets/ac2fdd58-2470-4514-bbb1-eae95ac3835c" />
+<p></p>
+
 **Hangi kategoriler toplam satışlara en çok katkı sağlıyor?**
 
 ```sql
@@ -266,6 +282,10 @@ ORDER BY total_sales DESC;
 **Amaç:**
 - Hedeflenen içgörüler için verileri anlamlı kategorilere ayırmak.
 - Müşteri segmentasyonu, ürün kategorizasyonu veya bölgesel analiz için.
+
+<p></p>
+<img width="1391" height="683" alt="image" src="https://github.com/user-attachments/assets/7f0968d1-3450-4e85-820f-bf15e73fe789" />
+<p></p>
 
 **Ürünleri maliyet aralıklarına göre segmentlere ayırın ve
 her segmente kaç ürünün düştüğünü sayın**
@@ -427,6 +447,11 @@ END AS avg_monthly_spend
 FROM customer_aggregation
 ```
 
+<p></p>
+<img width="2879" height="509" alt="image" src="https://github.com/user-attachments/assets/9703d925-9a90-441c-bc0b-c86393a546ff" />
+<p></p>
+
+
 ### 7. Ürün Raporu (Product Report)
 
 **Amaç:**
@@ -527,6 +552,9 @@ SELECT
 
 FROM product_aggregations
 ```
+<p></p>
+<img width="2878" height="819" alt="image" src="https://github.com/user-attachments/assets/72e59ff4-9e0e-427e-b402-392013ebc67a" />
+<p></p>
 
 
 

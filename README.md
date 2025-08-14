@@ -32,13 +32,15 @@ Projede üç veri seti kullanıldı:
 ## 📋 İçerik
 
 **Analiz Bölümleri**
-1.Zaman İçinde Değişim Analizi (Change Over Time Analysis)
+
+1. Zaman İçinde Değişim Analizi (Change Over Time Analysis)
 2. Kümülatif Analiz (Cumulative Analysis)
 3. Performans Analizi (Year-over-Year, Month-over-Month)
 4. Parçadan Bütüne Analiz (Part-to-Whole Analysis)
 5. Veri Segmentasyon Analizi (Data Segmentation Analysis)
 
 **Raporlama Bölümleri**
+
 6. Müşteri Raporu (Customer Report)
 7. Ürün Raporu (Product Report)
 
@@ -59,14 +61,14 @@ Projede üç veri seti kullanıldı:
 
 Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 
-- **Date Functions:** YEAR(), MONTH(), DATEPART(), DATETRUNC(), FORMAT() ile dönemsel gruplama ve zaman serisi analizi
-- **JOIN Türleri:** LEFT JOIN ile fact ve dimension tablolarının ilişkilendirilmesi
-- **Aggregation Functions:** SUM(), COUNT(), AVG() ile temel metriklerin hesaplanması
-- **Grouping:** GROUP BY ile yıl, ay, kategori, müşteri, ürün bazlı özetleme
-- **Ordering:** ORDER BY ile dönemsel veya performans bazlı sıralama
-- **Koşullu Mantık:** CASE ile müşteri ve ürün segmentasyonları (VIP, Regular, New vb.)
-- **Window Functions:** SUM() OVER(), AVG() OVER(), LAG() ile kümülatif hesaplama, hareketli ortalama ve dönem karşılaştırmaları
-- **Part-to-Whole Hesaplama:** SUM(...) OVER() ile kategori/segment katkı yüzdelerinin çıkarılması
+- **Date Functions:** `YEAR()`, `MONTH()`, `DATEPART()`, `DATETRUNC()`, `FORMAT()` ile dönemsel gruplama ve zaman serisi analizi
+- **JOIN Türleri:** `LEFT JOIN` ile fact ve dimension tablolarının ilişkilendirilmesi
+- **Aggregation Functions:** `SUM()`, `COUNT()`, `AVG()` ile temel metriklerin hesaplanması
+- **Grouping:** `GROUP BY` ile yıl, ay, kategori, müşteri, ürün bazlı özetleme
+- **Ordering:** `ORDER BY` ile dönemsel veya performans bazlı sıralama
+- **Koşullu Mantık:** `CASE` ile müşteri ve ürün segmentasyonları (VIP, Regular, New vb.)
+- **Window Functions:** `SUM() OVER()`, `AVG() OVER()`, `LAG()` ile kümülatif hesaplama, hareketli ortalama ve dönem karşılaştırmaları
+- **Part-to-Whole Hesaplama:** `SUM(...) OVER()` ile kategori/segment katkı yüzdelerinin çıkarılması
 - **KPI Hesaplamaları:** Recency, AOV (Average Order Value), ortalama aylık harcama/gelir metriklerinin SQL içinde türetilmesi
 
 ---

@@ -84,6 +84,41 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 
 ## 📜 SQL Sorguları
 
+**Analiz Bölümleri**
+
+## 1. Zaman İçinde Değişim Analizi (Change Over Time Analysis)
+
+**Amaç:**
+
+## 2. Kümülatif Analiz (Cumulative Analysis)
+
+**Amaç:**
+
+## 3. Performans Analizi (Year-over-Year, Month-over-Month)
+
+**Amaç:**
+
+## 4. Parçadan Bütüne Analiz (Part-to-Whole Analysis)
+
+**Amaç:**
+
+## 5. Veri Segmentasyon Analizi (Data Segmentation Analysis)
+
+**Amaç:**
+
+**Raporlama Bölümleri**
+
+## 6. Müşteri Raporu (Customer Report)
+
+**Amaç:**
+
+## 7. Ürün Raporu (Product Report)
+
+**Amaç:**
+
+
+**Amaç:*
+
 
 
 

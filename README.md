@@ -191,7 +191,8 @@ FROM
 <img width="1237" height="873" alt="image" src="https://github.com/user-attachments/assets/d3f43375-ee68-4926-a8e6-7dc419c5dd70" />
 <p></p>	
 
-**Yıllık toplam satışları ve zaman içindeki satışların toplamını, hareketli ortalama satış fiyatını hesaplayın**
+**Yıllık toplam satışları ve zaman içindeki satışların toplamını, </br>
+hareketli ortalama satış fiyatını hesaplayın**
 
 ```sql
 SELECT
@@ -227,7 +228,8 @@ FROM
 <img width="1306" height="690" alt="image" src="https://github.com/user-attachments/assets/ed74b158-8389-4bc5-a375-2114b218d7ed" />
 <p></p>
 
-**Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin**
+**Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla </br>
+hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin**
 
 ```sql
 WITH yearly_product_sales AS (
@@ -347,11 +349,11 @@ ORDER BY total_products DESC;
 <img width="933" height="391" alt="image" src="https://github.com/user-attachments/assets/6893b905-27ae-4074-8f76-c36953853570" />
 <p></p>
 
-**Müşterileri harcama davranışlarına göre üç segmente ayırın:**
-**- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.**
-**- Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.**
-**- New: Yaşam süreleri 12 aydan az olan müşteriler.**
-**Ve her gruba göre toplam müşteri sayısını bulun.**
+**Müşterileri harcama davranışlarına göre üç segmente ayırın:</br>
+- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.</br>
+- Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.</br>
+- New: Yaşam süreleri 12 aydan az olan müşteriler.</br>
+Ve her gruba göre toplam müşteri sayısını bulun.**
 
 ```sql
 WITH customer_spending AS (

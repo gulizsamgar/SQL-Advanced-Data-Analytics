@@ -3,13 +3,13 @@
 ## 🚀 Projeye Genel Bakış
 
 **Komut Dosyaları:** 
-[`01_change_over_time_analysis`](scripts/07_change_over_time_analysis.sql)
-[`02_cumulative_analysis`](scripts/08_cumulative_analysis.sql)
-[`03_performance_analysis`](scripts/09_performance_analysis.sql)
-[`04_part_to_whole_analysis`](scripts/10_part_to_whole_analysis.sql)
-[`05_data_segmentation_analysis`](scripts/11_data_segmentation_analysis.sql)
-[`06_report_customers`](scripts/12_report_customers.sql)
-[`07_report_products`](scripts/13_report_products.sql)
+[`change_over_time_analysis`](scripts/01_change_over_time_analysis.sql)
+[`cumulative_analysis`](scripts/02_cumulative_analysis.sql)
+[`performance_analysis`](scripts/03_performance_analysis.sql)
+[`part_to_whole_analysis`](scripts/04_part_to_whole_analysis.sql)
+[`data_segmentation_analysis`](scripts/05_data_segmentation_analysis.sql)
+[`report_customers`](scripts/06_report_customers.sql)
+[`report_products`](scripts/07_report_products.sql)
 
 
 **Açıklama:** Bu proje, SQL kullanarak satış, müşteri ve ürün verileri üzerinde kapsamlı zaman serisi, performans ve segmentasyon analizleri yapılmasını kapsamaktadır.

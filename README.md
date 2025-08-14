@@ -91,7 +91,7 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 ### 2. Ürün Performansı ve Portföy Yönetimi
 
 **Temel Bulgular:**
-- Satışların %96’sı bisiklet kategorisinden geliyor; aksesuar ve giyim kategorilerinin payı oldukça düşük.
+- Satışların %96.46’sı bisiklet kategorisinden geliyor; aksesuar ve giyim kategorilerinin payı oldukça düşük.
 - Bazı ürünler yıllar içinde ortalamanın üzerinde performans gösterirken (Above Avg), bazıları sürekli ortalamanın altında kalmış (Below Avg).
 - “High-Performer” ürünler toplam gelirde kritik paya sahip; “Low-Performer” ürünlerin satış katkısı çok düşük.
 
@@ -103,7 +103,7 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 ### 3. Müşteri Segmentasyonu ve Sadakat
 
 **Temel Bulgular:**
-- Müşterilerin %81’i “New” segmentinde; VIP müşteri oranı sadece %9 civarında.
+- Müşterilerin %79.1’si “New” segmentinde; VIP müşteri oranı sadece %9 civarında.
 - VIP müşteriler yüksek harcama kapasitesine sahip ve uzun vadeli gelir potansiyeli taşıyor.
 - 30–50 yaş grubu müşteri kitlesi baskın durumda.
 
@@ -266,7 +266,7 @@ FROM
 - Yıllık trendleri ve büyümeyi izlemek.
 
 <p></p>
-<img width="1306" height="690" alt="image" src="https://github.com/user-attachments/assets/ed74b158-8389-4bc5-a375-2114b218d7ed" />
+<img width="1919" height="326" alt="image" src="https://github.com/user-attachments/assets/41983072-5c17-439c-9fe9-d1432a0c437b" />
 <p></p>
 
 **Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla </br>

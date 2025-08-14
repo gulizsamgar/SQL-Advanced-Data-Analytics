@@ -3,7 +3,7 @@
 Customer Report (Müşteri Raporu)
 ===============================================================================
 Amaç:
-- Bu rapor, temel müşteri metriklerini ve davranışlarını bir araya getirir.
+	- Bu rapor, temel müşteri metriklerini ve davranışlarını bir araya getirir.
 
 Önemli Noktalar:
 	1. Adlar, yaşlar ve işlem ayrıntıları gibi temel alanları toplar.
@@ -105,5 +105,6 @@ CASE WHEN lifespan = 0 THEN total_sales
 END AS avg_monthly_spend
 
 FROM customer_aggregation
+
 
 

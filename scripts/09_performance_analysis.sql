@@ -8,9 +8,9 @@ Amaç:
 - Yıllık trendleri ve büyümeyi izlemek.
 
 Kullanılan SQL Fonksiyonları:
-- LAG(): Önceki satırlardaki verilere erişir.
-- AVG() OVER(): Bölümler içindeki ortalama değerleri hesaplar.
-- CASE: Trend analizi için koşullu mantığı tanımlar.
+    - LAG(): Önceki satırlardaki verilere erişir.
+    - AVG() OVER(): Bölümler içindeki ortalama değerleri hesaplar.
+    - CASE: Trend analizi için koşullu mantığı tanımlar.
 ===============================================================================
 */
 
@@ -50,4 +50,5 @@ SELECT
     END AS py_change
 FROM yearly_product_sales
 ORDER BY product_name, order_year;
+
 

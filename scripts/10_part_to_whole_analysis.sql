@@ -8,8 +8,8 @@ Amaç:
 - A/B testi veya bölgesel karşılaştırmalar için kullanışlıdır.
 
 Kullanılan SQL Fonksiyonları:
-    - SUM(), AVG(): Aggregates values for comparison.
-    - Window Functions: SUM() OVER() for total calculations.
+    - SUM(), AVG(): Karşılaştırma için değerleri toplar.
+    - Window Functions: Toplam hesaplamaları için SUM() OVER().
 ===============================================================================
 */
 
@@ -30,4 +30,5 @@ SELECT
     ROUND((CAST(total_sales AS FLOAT) / SUM(total_sales) OVER ()) * 100, 2) AS percentage_of_total
 FROM category_sales
 ORDER BY total_sales DESC;
+
 

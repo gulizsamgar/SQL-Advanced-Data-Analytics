@@ -3,9 +3,9 @@
 Part-to-Whole Analysis (Parçadan Bütüne Analiz)
 ===============================================================================
 Amaç:
-- Boyutlar veya zaman dilimleri arasında performansı veya metrikleri karşılaştırmak.
-- Kategoriler arasındaki farklılıkları değerlendirmek.
-- A/B testi veya bölgesel karşılaştırmalar için kullanışlıdır.
+    - Boyutlar veya zaman dilimleri arasında performansı veya metrikleri karşılaştırmak.
+    - Kategoriler arasındaki farklılıkları değerlendirmek.
+    - A/B testi veya bölgesel karşılaştırmalar için kullanışlıdır.
 
 Kullanılan SQL Fonksiyonları:
     - SUM(), AVG(): Karşılaştırma için değerleri toplar.
@@ -30,5 +30,6 @@ SELECT
     ROUND((CAST(total_sales AS FLOAT) / SUM(total_sales) OVER ()) * 100, 2) AS percentage_of_total
 FROM category_sales
 ORDER BY total_sales DESC;
+
 
 

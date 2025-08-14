@@ -2,20 +2,20 @@
 ===============================================================================
 Performance Analysis (Year-over-Year, Month-over-Month)
 ===============================================================================
-Purpose:
-    - To measure the performance of products, customers, or regions over time.
-    - For benchmarking and identifying high-performing entities.
-    - To track yearly trends and growth.
+Amaç:
+- Ürünlerin, müşterilerin veya bölgelerin zaman içindeki performansını ölçmek.
+- Yüksek performans gösteren kuruluşları kıyaslamak ve belirlemek.
+- Yıllık trendleri ve büyümeyi izlemek.
 
-SQL Functions Used:
-    - LAG(): Accesses data from previous rows.
-    - AVG() OVER(): Computes average values within partitions.
-    - CASE: Defines conditional logic for trend analysis.
+Kullanılan SQL Fonksiyonları:
+- LAG(): Önceki satırlardaki verilere erişir.
+- AVG() OVER(): Bölümler içindeki ortalama değerleri hesaplar.
+- CASE: Trend analizi için koşullu mantığı tanımlar.
 ===============================================================================
 */
 
-/* Analyze the yearly performance of products by comparing their sales 
-to both the average sales performance of the product and the previous year's sales */
+/* Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla 
+hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin */
 WITH yearly_product_sales AS (
     SELECT
         YEAR(f.order_date) AS order_year,
@@ -40,7 +40,7 @@ SELECT
         WHEN current_sales - AVG(current_sales) OVER (PARTITION BY product_name) < 0 THEN 'Below Avg'
         ELSE 'Avg'
     END AS avg_change,
-    -- Year-over-Year Analysis
+    -- Yıldan yıla (Year-over-Year) Analiz
     LAG(current_sales) OVER (PARTITION BY product_name ORDER BY order_year) AS py_sales,
     current_sales - LAG(current_sales) OVER (PARTITION BY product_name ORDER BY order_year) AS diff_py,
     CASE 
@@ -50,3 +50,4 @@ SELECT
     END AS py_change
 FROM yearly_product_sales
 ORDER BY product_name, order_year;
+

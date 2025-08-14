@@ -349,8 +349,8 @@ ORDER BY total_products DESC;
 <img width="933" height="391" alt="image" src="https://github.com/user-attachments/assets/6893b905-27ae-4074-8f76-c36953853570" />
 <p></p>
 
-**Müşterileri harcama davranışlarına göre üç segmente ayırın:**
-**- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.</br>
+**Müşterileri harcama davranışlarına göre üç segmente ayırın:</br>**
+- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.</br>
 - Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.</br>
 - New: Yaşam süreleri 12 aydan az olan müşteriler.</br>**
 **Ve her gruba göre toplam müşteri sayısını bulun.**

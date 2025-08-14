@@ -3,9 +3,9 @@
 Change Over Time Analysis (Zaman İçinde Değişim Analizi)
 ===============================================================================
 Amaç:
-- Zaman içinde temel metriklerdeki eğilimleri, büyümeyi ve değişiklikleri izlemek.
-- Zaman serisi analizi ve mevsimselliğin belirlenmesi için.
-- Belirli dönemlerdeki büyümeyi veya düşüşü ölçmek.
+    - Zaman içinde temel metriklerdeki eğilimleri, büyümeyi ve değişiklikleri izlemek.
+    - Zaman serisi analizi ve mevsimselliğin belirlenmesi için.
+    - Belirli dönemlerdeki büyümeyi veya düşüşü ölçmek.
 
 Kullanılan SQL Fonksiyonları:
     - Date Functions: DATEPART(), DATETRUNC(), FORMAT()
@@ -47,4 +47,5 @@ FROM gold.fact_sales
 WHERE order_date IS NOT NULL
 GROUP BY FORMAT(order_date, 'yyyy-MMM')
 ORDER BY FORMAT(order_date, 'yyyy-MMM');
+
 

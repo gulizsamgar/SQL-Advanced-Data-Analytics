@@ -6,18 +6,18 @@ Amaç:
 - Bu rapor, temel müşteri metriklerini ve davranışlarını bir araya getirir.
 
 Önemli Noktalar:
-1. Adlar, yaşlar ve işlem ayrıntıları gibi temel alanları toplar.
-2. Müşterileri kategorilere (VIP, Regular, New) ve yaş gruplarına ayırır.
-3. Müşteri düzeyindeki metrikleri bir araya getirir:
-- toplam siparişler
-- toplam satışlar
-- toplam satın alınan miktar
-- toplam ürünler
-- lifespan (ömür) (ay olarak)
-4. Değerli KPI'ları hesaplar:
-- recency (son siparişten bu yana geçen ay sayısı)
-- ortalama sipariş değeri
-- ortalama aylık harcama
+	1. Adlar, yaşlar ve işlem ayrıntıları gibi temel alanları toplar.
+	2. Müşterileri kategorilere (VIP, Regular, New) ve yaş gruplarına ayırır.
+	3. Müşteri düzeyindeki metrikleri bir araya getirir:
+		- toplam siparişler
+		- toplam satışlar
+		- toplam satın alınan miktar
+		- toplam ürünler
+		- lifespan (ömür) (ay olarak)
+	4. Değerli KPI'ları hesaplar:
+		- recency (son siparişten bu yana geçen ay sayısı)
+		- ortalama sipariş değeri
+		- ortalama aylık harcama
 ===============================================================================
 */
 
@@ -105,4 +105,5 @@ CASE WHEN lifespan = 0 THEN total_sales
 END AS avg_monthly_spend
 
 FROM customer_aggregation
+
 

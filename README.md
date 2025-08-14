@@ -316,8 +316,7 @@ ORDER BY total_products DESC;
 - VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.
 - Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.
 - New: Yaşam süreleri 12 aydan az olan müşteriler.
-Ve her gruba göre toplam müşteri sayısını bulun.
-**
+Ve her gruba göre toplam müşteri sayısını bulun.**
 
 ```sql
 WITH customer_spending AS (

@@ -3,8 +3,8 @@
 Data Segmentation Analysis (Veri Segmentasyon Analizi)
 ===============================================================================
 Amaç:
-- Hedeflenen içgörüler için verileri anlamlı kategorilere ayırmak.
-- Müşteri segmentasyonu, ürün kategorizasyonu veya bölgesel analiz için.
+    - Hedeflenen içgörüler için verileri anlamlı kategorilere ayırmak.
+    - Müşteri segmentasyonu, ürün kategorizasyonu veya bölgesel analiz için.
 
 Kullanılan SQL Fonksiyonları:
     - CASE: Özel segmentasyon mantığını tanımlar.
@@ -68,5 +68,6 @@ FROM (
 ) AS segmented_customers
 GROUP BY customer_segment
 ORDER BY total_customers DESC;
+
 
 

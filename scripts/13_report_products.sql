@@ -3,21 +3,21 @@
 Product Report (Ürün Raporu)
 ===============================================================================
 Amaç:
-- Bu rapor, temel ürün metriklerini ve davranışlarını bir araya getirir.
+	- Bu rapor, temel ürün metriklerini ve davranışlarını bir araya getirir.
 
 Önemli Noktalar:
-1. Ürün adı, kategori, alt kategori ve maliyet gibi temel alanları toplar.
-2. Yüksek Performanslı, Orta Seviye veya Düşük Performanslı ürünleri belirlemek için ürünleri gelire göre segmentlere ayırır. ( High-Performers, Mid-Range, Low-Performers)
-3. Ürün düzeyindeki metrikleri bir araya getirir:
-- toplam siparişler
-- toplam satışlar
-- toplam satılan miktar
-- toplam müşteri sayısı (benzersiz)
-- lifespan (ömür) (ay olarak)
-4. Değerli KPI'ları hesaplar:
-- recency (son satıştan bu yana geçen ay sayısı)
-- ortalama sipariş geliri (AOR)
-- ortalama aylık gelir
+	1. Ürün adı, kategori, alt kategori ve maliyet gibi temel alanları toplar.
+	2. Yüksek Performanslı, Orta Seviye veya Düşük Performanslı ürünleri belirlemek için ürünleri gelire göre segmentlere ayırır. ( High-Performers, Mid-Range, Low-Performers)
+	3. Ürün düzeyindeki metrikleri bir araya getirir:
+		- toplam siparişler
+		- toplam satışlar
+		- toplam satılan miktar
+		- toplam müşteri sayısı (benzersiz)
+		- lifespan (ömür) (ay olarak)
+	4. Değerli KPI'ları hesaplar:
+		- recency (son satıştan bu yana geçen ay sayısı)
+		- ortalama sipariş geliri (AOR)
+		- ortalama aylık gelir
 ===============================================================================
 */
 
@@ -114,3 +114,4 @@ SELECT
 
 
 FROM product_aggregations 
+

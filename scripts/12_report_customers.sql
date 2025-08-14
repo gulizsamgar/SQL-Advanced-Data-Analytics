@@ -2,22 +2,22 @@
 ===============================================================================
 Customer Report
 ===============================================================================
-Purpose:
-    - This report consolidates key customer metrics and behaviors
+Amaç:
+- Bu rapor, temel müşteri metriklerini ve davranışlarını bir araya getirir.
 
-Highlights:
-    1. Gathers essential fields such as names, ages, and transaction details.
-	2. Segments customers into categories (VIP, Regular, New) and age groups.
-    3. Aggregates customer-level metrics:
-	   - total orders
-	   - total sales
-	   - total quantity purchased
-	   - total products
-	   - lifespan (in months)
-    4. Calculates valuable KPIs:
-	    - recency (months since last order)
-		- average order value
-		- average monthly spend
+Önemli Noktalar:
+1. Adlar, yaşlar ve işlem ayrıntıları gibi temel alanları toplar.
+2. Müşterileri kategorilere (VIP, Regular, New) ve yaş gruplarına ayırır.
+3. Müşteri düzeyindeki metrikleri bir araya getirir:
+- toplam siparişler
+- toplam satışlar
+- toplam satın alınan miktar
+- toplam ürünler
+- lifespan (ömür) (ay olarak)
+4. Değerli KPI'ları hesaplar:
+- recency (son siparişten bu yana geçen ay sayısı)
+- ortalama sipariş değeri
+- ortalama aylık harcama
 ===============================================================================
 */
 
@@ -32,7 +32,7 @@ CREATE VIEW gold.report_customers AS
 
 WITH base_query AS(
 /*---------------------------------------------------------------------------
-1) Base Query: Retrieves core columns from tables
+1) Base Query: Tablolardan temel sütunları alır
 ---------------------------------------------------------------------------*/
 SELECT
 f.order_number,
@@ -51,7 +51,7 @@ WHERE order_date IS NOT NULL)
 
 , customer_aggregation AS (
 /*---------------------------------------------------------------------------
-2) Customer Aggregations: Summarizes key metrics at the customer level
+2) Customer Aggregations: Müşteri düzeyindeki temel ölçümleri özetler
 ---------------------------------------------------------------------------*/
 SELECT 
 	customer_key,
@@ -95,12 +95,13 @@ total_sales,
 total_quantity,
 total_products
 lifespan,
--- Compuate average order value (AVO)
+-- Ortalama sipariş değerini (AOV) hesapla
 CASE WHEN total_sales = 0 THEN 0
 	 ELSE total_sales / total_orders
 END AS avg_order_value,
--- Compuate average monthly spend
+-- Ortalama aylık harcamayı hesaplayın
 CASE WHEN lifespan = 0 THEN total_sales
      ELSE total_sales / lifespan
 END AS avg_monthly_spend
+
 FROM customer_aggregation

@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-Customer Report
+Customer Report (Müşteri Raporu)
 ===============================================================================
 Amaç:
 - Bu rapor, temel müşteri metriklerini ve davranışlarını bir araya getirir.
@@ -22,7 +22,7 @@ Amaç:
 */
 
 -- =============================================================================
--- Create Report: gold.report_customers
+-- Rapor Oluştur: gold.report_customers
 -- =============================================================================
 IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL
     DROP VIEW gold.report_customers;
@@ -105,3 +105,4 @@ CASE WHEN lifespan = 0 THEN total_sales
 END AS avg_monthly_spend
 
 FROM customer_aggregation
+

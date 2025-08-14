@@ -3,9 +3,9 @@
 Cumulative Analysis (Kümülatif Analiz)
 ===============================================================================
 Amaç:
-- Temel metrikler için toplamları veya hareketli ortalamaları hesaplamak.
-- Performansı zaman içinde kümülatif olarak izlemek.
-- Büyüme analizi veya uzun vadeli eğilimleri belirlemek için kullanışlıdır.
+	- Temel metrikler için toplamları veya hareketli ortalamaları hesaplamak.
+	- Performansı zaman içinde kümülatif olarak izlemek.
+	- Büyüme analizi veya uzun vadeli eğilimleri belirlemek için kullanışlıdır.
 
 Kullanılan SQL Fonksiyonları:
     - Window Functions: SUM() OVER(), AVG() OVER()
@@ -46,6 +46,7 @@ FROM
     WHERE order_date IS NOT NULL
     GROUP BY DATETRUNC(year, order_date)
 ) t
+
 
 
 

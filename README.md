@@ -22,9 +22,9 @@ Elde edilen bulgular, satış performansını artırmak, müşteri segmentlerini
 
 Projede üç veri seti kullanıldı:  
 
-- [**fact_sales.csv**](csv-files/gold.fact_sales.csv): Sipariş bazında satış detaylarını içerir (tarih, müşteri, ürün, miktar, tutar).  
-- [**dim_customers.csv**](csv-files/gold.dim_customers.csv): Müşteri bazlı özet bilgileri ve segmentlerini içerir.  
-- [**dim_products.csv**](csv-files/gold.dim_products.csv): Ürünlerin ad, kategori, alt kategori, maliyet gibi tanımlayıcı bilgilerini içerir.
+- [**fact_sales.csv**](datasets/csv-files/gold.fact_sales.csv): Sipariş bazında satış detaylarını içerir (tarih, müşteri, ürün, miktar, tutar).  
+- [**dim_customers.csv**](datasets/csv-files/gold.dim_customers.csv): Müşteri bazlı özet bilgileri ve segmentlerini içerir.  
+- [**dim_products.csv**](datasets/csv-files/gold.dim_products.csv): Ürünlerin ad, kategori, alt kategori, maliyet gibi tanımlayıcı bilgilerini içerir.
 
 
 ---

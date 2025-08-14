@@ -99,7 +99,7 @@ Projede aşağıdaki SQL teknikleri aktif olarak kullanılmıştır:
 <p></p>
 
 **Zaman içinde satış performansını analiz edin**
-**- Hızlı Tarih Fonksiyonları**
+**-Hızlı Tarih Fonksiyonları**
 
 ```sql
 SELECT
@@ -203,7 +203,8 @@ FROM
 <img width="1306" height="690" alt="image" src="https://github.com/user-attachments/assets/ed74b158-8389-4bc5-a375-2114b218d7ed" />
 <p></p>
 
-** Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin **
+**Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla 
+hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin**
 
 ```sql
 WITH yearly_product_sales AS (

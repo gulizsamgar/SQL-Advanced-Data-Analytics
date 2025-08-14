@@ -114,6 +114,11 @@ GROUP BY YEAR(order_date), MONTH(order_date)
 ORDER BY YEAR(order_date), MONTH(order_date);
 ```
 
+**Çıktı:**
+<p></p>
+<img width="1517" height="608" alt="image" src="https://github.com/user-attachments/assets/ee3354ed-6546-4ac4-a20a-1a9b6a44a8ce" />
+<p></p>	
+
 **- DATETRUNC()**
 
 ```sql
@@ -128,6 +133,11 @@ GROUP BY DATETRUNC(month, order_date)
 ORDER BY DATETRUNC(month, order_date);
 ```
 
+**Çıktı:**
+<p></p>
+<img width="1274" height="613" alt="image" src="https://github.com/user-attachments/assets/57199d82-9f7e-46e0-9b0a-8d58d9bb81ab" />
+<p></p>
+
 **- FORMAT()**
 
 ```sql
@@ -141,6 +151,11 @@ WHERE order_date IS NOT NULL
 GROUP BY FORMAT(order_date, 'yyyy-MMM')
 ORDER BY FORMAT(order_date, 'yyyy-MMM');
 ```
+
+**Çıktı:**
+<p></p>
+<img width="1224" height="612" alt="image" src="https://github.com/user-attachments/assets/cea04d07-1150-4d32-b16b-ce7d3962df35" />
+<p></p>
 
 ## 2. Kümülatif Analiz (Cumulative Analysis)
 
@@ -170,7 +185,11 @@ FROM
     GROUP BY DATETRUNC(month, order_date)
 ) t
 ```
-	
+
+**Çıktı:**
+<p></p>
+<img width="1237" height="873" alt="image" src="https://github.com/user-attachments/assets/d3f43375-ee68-4926-a8e6-7dc419c5dd70" />
+<p></p>	
 
 **Yıllık toplam satışları ve zaman içindeki satışların toplamını, hareketli ortalama satış fiyatını hesaplayın**
 
@@ -192,6 +211,11 @@ FROM
 ) t
 ```
 
+**Çıktı:**
+<p></p>
+<img width="1892" height="434" alt="image" src="https://github.com/user-attachments/assets/67661054-e2df-41a7-bb30-2ce542b5e8c1" />
+<p></p>
+
 ## 3. Performans Analizi (Year-over-Year, Month-over-Month)
 
 **Amaç:**
@@ -203,8 +227,7 @@ FROM
 <img width="1306" height="690" alt="image" src="https://github.com/user-attachments/assets/ed74b158-8389-4bc5-a375-2114b218d7ed" />
 <p></p>
 
-**Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla 
-hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin**
+**Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin**
 
 ```sql
 WITH yearly_product_sales AS (
@@ -243,6 +266,11 @@ FROM yearly_product_sales
 ORDER BY product_name, order_year;
 ```
 
+**Çıktı:**
+<p></p>
+<img width="2820" height="590" alt="image" src="https://github.com/user-attachments/assets/c8281fcf-01c5-47e8-8ecc-da7a5001763a" />
+<p></p>
+
 ## 4. Parçadan Bütüne Analiz (Part-to-Whole Analysis)
 
 **Amaç:**
@@ -274,6 +302,11 @@ SELECT
 FROM category_sales
 ORDER BY total_sales DESC;
 ```
+
+**Çıktı:**
+<p></p>
+<img width="1978" height="360" alt="image" src="https://github.com/user-attachments/assets/f5d18ca7-35f1-4101-ac8f-9dd2ef90d653" />
+<p></p>
 
 ## 5. Veri Segmentasyon Analizi (Data Segmentation Analysis)
 
@@ -309,11 +342,16 @@ GROUP BY cost_range
 ORDER BY total_products DESC;
 ```
 
-**Müşterileri harcama davranışlarına göre üç segmente ayırın:
-- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.
-- Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.
-- New: Yaşam süreleri 12 aydan az olan müşteriler.
-Ve her gruba göre toplam müşteri sayısını bulun.**
+**Çıktı:**
+<p></p>
+<img width="933" height="391" alt="image" src="https://github.com/user-attachments/assets/6893b905-27ae-4074-8f76-c36953853570" />
+<p></p>
+
+**Müşterileri harcama davranışlarına göre üç segmente ayırın:**
+**- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.**
+**- Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.**
+**- New: Yaşam süreleri 12 aydan az olan müşteriler.**
+**Ve her gruba göre toplam müşteri sayısını bulun.**
 
 ```sql
 WITH customer_spending AS (
@@ -344,6 +382,11 @@ FROM (
 GROUP BY customer_segment
 ORDER BY total_customers DESC;
 ```
+
+**Çıktı:**
+</p>
+<img width="1287" height="331" alt="image" src="https://github.com/user-attachments/assets/d81a2466-217c-4492-ab95-99f2c472c933" />
+</p>
 
 ## Raporlama Bölümleri
 
@@ -442,7 +485,7 @@ END AS avg_monthly_spend
 
 FROM customer_aggregation
 ```
-
+**Çıktı:**
 <p></p>
 <img width="2879" height="509" alt="image" src="https://github.com/user-attachments/assets/9703d925-9a90-441c-bc0b-c86393a546ff" />
 <p></p>
@@ -548,6 +591,8 @@ SELECT
 
 FROM product_aggregations
 ```
+**Çıktı:**
+
 <p></p>
 <img width="2878" height="819" alt="image" src="https://github.com/user-attachments/assets/72e59ff4-9e0e-427e-b402-392013ebc67a" />
 <p></p>

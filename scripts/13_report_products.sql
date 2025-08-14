@@ -1,27 +1,28 @@
 /*
 ===============================================================================
-Product Report
+Product Report (Ürün Raporu)
 ===============================================================================
-Purpose:
-    - This report consolidates key product metrics and behaviors.
+Amaç:
+- Bu rapor, temel ürün metriklerini ve davranışlarını bir araya getirir.
 
-Highlights:
-    1. Gathers essential fields such as product name, category, subcategory, and cost.
-    2. Segments products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
-    3. Aggregates product-level metrics:
-       - total orders
-       - total sales
-       - total quantity sold
-       - total customers (unique)
-       - lifespan (in months)
-    4. Calculates valuable KPIs:
-       - recency (months since last sale)
-       - average order revenue (AOR)
-       - average monthly revenue
+Önemli Noktalar:
+1. Ürün adı, kategori, alt kategori ve maliyet gibi temel alanları toplar.
+2. Yüksek Performanslı, Orta Seviye veya Düşük Performanslı ürünleri belirlemek için ürünleri gelire göre segmentlere ayırır. ( High-Performers, Mid-Range, Low-Performers)
+3. Ürün düzeyindeki metrikleri bir araya getirir:
+- toplam siparişler
+- toplam satışlar
+- toplam satılan miktar
+- toplam müşteri sayısı (benzersiz)
+- lifespan (ömür) (ay olarak)
+4. Değerli KPI'ları hesaplar:
+- recency (son satıştan bu yana geçen ay sayısı)
+- ortalama sipariş geliri (AOR)
+- ortalama aylık gelir
 ===============================================================================
 */
+
 -- =============================================================================
--- Create Report: gold.report_products
+-- Rapor Oluştur: gold.report_products
 -- =============================================================================
 IF OBJECT_ID('gold.report_products', 'V') IS NOT NULL
     DROP VIEW gold.report_products;
@@ -31,7 +32,7 @@ CREATE VIEW gold.report_products AS
 
 WITH base_query AS (
 /*---------------------------------------------------------------------------
-1) Base Query: Retrieves core columns from fact_sales and dim_products
+1) Base Query: fact_sales ve dim_products'tan temel sütunları alır
 ---------------------------------------------------------------------------*/
     SELECT
 	    f.order_number,
@@ -52,7 +53,7 @@ WITH base_query AS (
 
 product_aggregations AS (
 /*---------------------------------------------------------------------------
-2) Product Aggregations: Summarizes key metrics at the product level
+2) Product Aggregations: Ürün düzeyindeki temel ölçümleri özetler
 ---------------------------------------------------------------------------*/
 SELECT
     product_key,
@@ -78,7 +79,7 @@ GROUP BY
 )
 
 /*---------------------------------------------------------------------------
-  3) Final Query: Combines all product results into one output
+  3) Final Query: Tüm ürün sonuçlarını tek bir çıktıda birleştirir
 ---------------------------------------------------------------------------*/
 SELECT 
 	product_key,
@@ -99,16 +100,17 @@ SELECT
 	total_quantity,
 	total_customers,
 	avg_selling_price,
-	-- Average Order Revenue (AOR)
+	-- Ortalama Sipariş Geliri (AOR)
 	CASE 
 		WHEN total_orders = 0 THEN 0
 		ELSE total_sales / total_orders
 	END AS avg_order_revenue,
 
-	-- Average Monthly Revenue
+	-- Ortalama Aylık Gelir
 	CASE
 		WHEN lifespan = 0 THEN total_sales
 		ELSE total_sales / lifespan
 	END AS avg_monthly_revenue
+
 
 FROM product_aggregations 

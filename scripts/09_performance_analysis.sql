@@ -3,9 +3,9 @@
 Performance Analysis (Year-over-Year, Month-over-Month)
 ===============================================================================
 Amaç:
-- Ürünlerin, müşterilerin veya bölgelerin zaman içindeki performansını ölçmek.
-- Yüksek performans gösteren kuruluşları kıyaslamak ve belirlemek.
-- Yıllık trendleri ve büyümeyi izlemek.
+    - Ürünlerin, müşterilerin veya bölgelerin zaman içindeki performansını ölçmek.
+    - Yüksek performans gösteren kuruluşları kıyaslamak ve belirlemek.
+    - Yıllık trendleri ve büyümeyi izlemek.
 
 Kullanılan SQL Fonksiyonları:
     - LAG(): Önceki satırlardaki verilere erişir.
@@ -50,5 +50,6 @@ SELECT
     END AS py_change
 FROM yearly_product_sales
 ORDER BY product_name, order_year;
+
 
 

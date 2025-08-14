@@ -153,8 +153,7 @@ ORDER BY FORMAT(order_date, 'yyyy-MMM');
 <img width="1452" height="668" alt="image" src="https://github.com/user-attachments/assets/9090d077-882c-4494-8c80-151cc41f8459" />
 <p></p>
 
-**Aylık toplam satışları 
-ve zaman içindeki toplam satışları hesaplayın**
+**Aylık toplam satışları ve zaman içindeki toplam satışları hesaplayın**
 
 ```sql
 SELECT
@@ -173,8 +172,7 @@ FROM
 ```
 	
 
-**Yıllık toplam satışları
-ve zaman içindeki satışların toplamını, hareketli ortalama satış fiyatını hesaplayın**
+**Yıllık toplam satışları ve zaman içindeki satışların toplamını, hareketli ortalama satış fiyatını hesaplayın**
 
 ```sql
 SELECT
@@ -205,8 +203,7 @@ FROM
 <img width="1306" height="690" alt="image" src="https://github.com/user-attachments/assets/ed74b158-8389-4bc5-a375-2114b218d7ed" />
 <p></p>
 
-** Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla 
-hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin **
+** Ürünlerin yıllık performansını, satışların; hem ürünün ortalama satış performansıyla hem de bir önceki yılın satışlarıyla karşılaştırarak analiz edin **
 
 ```sql
 WITH yearly_product_sales AS (
@@ -287,8 +284,7 @@ ORDER BY total_sales DESC;
 <img width="1391" height="683" alt="image" src="https://github.com/user-attachments/assets/7f0968d1-3450-4e85-820f-bf15e73fe789" />
 <p></p>
 
-**Ürünleri maliyet aralıklarına göre segmentlere ayırın ve
-her segmente kaç ürünün düştüğünü sayın**
+**Ürünleri maliyet aralıklarına göre segmentlere ayırın ve her segmente kaç ürünün düştüğünü sayın**
 
 ```sql
 WITH product_segments AS (

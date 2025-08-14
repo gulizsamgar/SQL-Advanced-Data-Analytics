@@ -1,18 +1,19 @@
 /*
 ===============================================================================
-Part-to-Whole Analysis
+Part-to-Whole Analysis (Parçadan Bütüne Analiz)
 ===============================================================================
-Purpose:
-    - To compare performance or metrics across dimensions or time periods.
-    - To evaluate differences between categories.
-    - Useful for A/B testing or regional comparisons.
+Amaç:
+- Boyutlar veya zaman dilimleri arasında performansı veya metrikleri karşılaştırmak.
+- Kategoriler arasındaki farklılıkları değerlendirmek.
+- A/B testi veya bölgesel karşılaştırmalar için kullanışlıdır.
 
-SQL Functions Used:
+Kullanılan SQL Fonksiyonları:
     - SUM(), AVG(): Aggregates values for comparison.
     - Window Functions: SUM() OVER() for total calculations.
 ===============================================================================
 */
--- Which categories contribute the most to overall sales?
+
+-- Hangi kategoriler toplam satışlara en çok katkı sağlıyor?
 WITH category_sales AS (
     SELECT
         p.category,
@@ -29,3 +30,4 @@ SELECT
     ROUND((CAST(total_sales AS FLOAT) / SUM(total_sales) OVER ()) * 100, 2) AS percentage_of_total
 FROM category_sales
 ORDER BY total_sales DESC;
+

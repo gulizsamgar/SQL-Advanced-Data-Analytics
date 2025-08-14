@@ -1,19 +1,19 @@
 /*
 ===============================================================================
-Data Segmentation Analysis
+Data Segmentation Analysis (Veri Segmentasyon Analizi)
 ===============================================================================
-Purpose:
-    - To group data into meaningful categories for targeted insights.
-    - For customer segmentation, product categorization, or regional analysis.
+Amaç:
+- Hedeflenen içgörüler için verileri anlamlı kategorilere ayırmak.
+- Müşteri segmentasyonu, ürün kategorizasyonu veya bölgesel analiz için.
 
-SQL Functions Used:
-    - CASE: Defines custom segmentation logic.
-    - GROUP BY: Groups data into segments.
+Kullanılan SQL Fonksiyonları:
+- CASE: Özel segmentasyon mantığını tanımlar.
+- GROUP BY: Verileri segmentlere ayırır.
 ===============================================================================
 */
 
-/*Segment products into cost ranges and 
-count how many products fall into each segment*/
+/*Ürünleri maliyet aralıklarına göre segmentlere ayırın ve
+her segmente kaç ürünün düştüğünü sayın*/
 WITH product_segments AS (
     SELECT
         product_key,
@@ -34,11 +34,12 @@ FROM product_segments
 GROUP BY cost_range
 ORDER BY total_products DESC;
 
-/*Group customers into three segments based on their spending behavior:
-	- VIP: Customers with at least 12 months of history and spending more than €5,000.
-	- Regular: Customers with at least 12 months of history but spending €5,000 or less.
-	- New: Customers with a lifespan less than 12 months.
-And find the total number of customers by each group
+
+/*Müşterileri harcama davranışlarına göre üç segmente ayırın:
+- VIP: En az 12 aylık geçmişi olan ve 5.000 €'dan fazla harcama yapan müşteriler.
+- Regular: En az 12 aylık geçmişi olan ancak 5.000 € veya daha az harcama yapan müşteriler.
+- New: Yaşam süreleri 12 aydan az olan müşteriler.
+Ve her gruba göre toplam müşteri sayısını bulun.
 */
 WITH customer_spending AS (
     SELECT
@@ -67,3 +68,4 @@ FROM (
 ) AS segmented_customers
 GROUP BY customer_segment
 ORDER BY total_customers DESC;
+

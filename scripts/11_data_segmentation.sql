@@ -7,8 +7,8 @@ Amaç:
 - Müşteri segmentasyonu, ürün kategorizasyonu veya bölgesel analiz için.
 
 Kullanılan SQL Fonksiyonları:
-- CASE: Özel segmentasyon mantığını tanımlar.
-- GROUP BY: Verileri segmentlere ayırır.
+    - CASE: Özel segmentasyon mantığını tanımlar.
+    - GROUP BY: Verileri segmentlere ayırır.
 ===============================================================================
 */
 
@@ -68,4 +68,5 @@ FROM (
 ) AS segmented_customers
 GROUP BY customer_segment
 ORDER BY total_customers DESC;
+
 
